@@ -1,4 +1,4 @@
-followables = [obj_player];
+ob followables = [obj_player];
 follow_a = 0 // what followables[] the is camera on 
 follow = followables[follow_a]; // This camera will follow obj_player
 target_x = follow.x

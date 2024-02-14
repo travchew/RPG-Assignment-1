@@ -51,6 +51,7 @@
     {"id":{"name":"spr_player_right","path":"sprites/spr_player_right/spr_player_right.yy",},},
     {"id":{"name":"spr_apology","path":"sprites/spr_apology/spr_apology.yy",},},
     {"id":{"name":"spr_eyes","path":"sprites/spr_eyes/spr_eyes.yy",},},
+    {"id":{"name":"obj_test","path":"objects/obj_test/obj_test.yy",},},
     {"id":{"name":"spr_textbox_gr","path":"sprites/spr_textbox_gr/spr_textbox_gr.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"snd_item","path":"sounds/snd_item/snd_item.yy",},},

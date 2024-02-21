@@ -1,4 +1,4 @@
-ob followables = [obj_player];
+followables = [obj_player, obj_copy];
 follow_a = 0 // what followables[] the is camera on 
 follow = followables[follow_a]; // This camera will follow obj_player
 target_x = follow.x
@@ -20,6 +20,7 @@ function next(_a) {
 		return;
 	}
 	follow_a += 1;
+	
 }
 
 

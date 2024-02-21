@@ -48,8 +48,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "textboxes",
+    "path": "folders/textboxes.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

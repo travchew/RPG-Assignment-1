@@ -1,24 +1,43 @@
 hspeed = 0;
 vspeed = 0;
 
+global.control = true;
 
 
 
-
-move_spd = 5;
-
-sprite[RIGHT] = spr_player_right; // an array 0,1,2,3 of directions
-sprite[UP] = spr_player_up;
-sprite[LEFT] = spr_player_left;
-sprite[DOWN] = spr_player_down;
-
-mask_index = spr_player_up;
+move_spd = 3;
 
 face = DOWN; // start as down
 
-global.right_key = keyboard_check(vk_right);
-global.left_key = keyboard_check(vk_left);
-global.down_key = keyboard_check(vk_down);
-global.up_key = keyboard_check(vk_up);
+controls_default();
 
+function toggle_bounds() {
+	if keyboard_check_pressed(ord("X")) {
+		show_debug_message("pressed");
+		if (global.boundary = 0) global.boundary = true;
+		else global.boundary = false;
+	}
+}
 
+og_xscale = image_xscale;
+
+function face() {
+	if (hspeed > 0) image_xscale = og_xscale*1;
+	if (hspeed < 0) image_xscale = og_xscale*-1;
+	if (vspeed > 0) sprite_index = spr_headless;
+	if (vspeed < 0) sprite_index = spr_back;
+}
+
+function switch_player() {
+	if keyboard_check_pressed(ord("Z")) {
+		show_debug_message("player Switched");
+		if (global.control) {
+			global.control = false;
+			obj_camera.follow_a = 1;
+		}
+		else {
+			global.control = true;
+			obj_camera.follow_a = 0;
+		}
+	}
+}

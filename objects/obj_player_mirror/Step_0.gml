@@ -8,8 +8,8 @@ global.down_key = keyboard_check(vk_up);
 hspeed = (global.right_key-global.left_key) * move_spd;
 vspeed = (global.down_key-global.up_key) * move_spd;
 
-if place_meeting(x+hspeed, y, obj_wall) hspeed = 0; // will it collide next frame?
-if place_meeting(x, y+vspeed, obj_wall) vspeed = 0;
+if place_meeting(x+hspeed, y, obj_boundary) hspeed = 0; // will it collide next frame?
+if place_meeting(x, y+vspeed, obj_boundary) vspeed = 0;
 
 if (hspeed > 0) face = RIGHT;
 if (hspeed < 0) face = LEFT;

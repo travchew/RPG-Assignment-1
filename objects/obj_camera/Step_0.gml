@@ -14,3 +14,9 @@ else y += (room_height-(global.cam_height/2) - y)/cam_speed;
 
 
 camera_set_view_pos(view_camera[0],x-(global.cam_width*.5),y-(global.cam_height*.5));
+
+if keyboard_check_pressed(vk_enter) {
+	next(follow_a);
+}
+follow = followables[follow_a];
+

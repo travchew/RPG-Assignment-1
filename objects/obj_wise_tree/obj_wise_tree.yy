@@ -8,8 +8,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "old stuff",
+    "path": "folders/old stuff.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -27,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_wise_tree",
-    "path": "sprites/spr_wise_tree/spr_wise_tree.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

@@ -22,3 +22,4 @@ arrow_count = 0;
 
 draw_set_font(fnt_bangla);
 
+show_debug_message("I HAVE BEEN CREATED");

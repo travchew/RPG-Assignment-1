@@ -8,12 +8,15 @@ if(string_length(new_text) < string_length(text)){
 }
 
 //draw_text_ext(x - global.cam_width/2 + x_margin, y - 23, new_text, 15, global.cam_width - 2*x_margin);
-draw_set_color(c_black);
+draw_set_color(c_white);
 draw_text_ext(x,y,new_text,40, 800);
+//show_debug_message("text drawn");
 
 
 if point_distance(og_x, og_y, obj_player.x, obj_player.y) > 60 {
+	show_debug_message("textbox destroyed");
 	instance_destroy();
+	
 }
 
 

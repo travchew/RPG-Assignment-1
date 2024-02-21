@@ -1,6 +1,3 @@
-
 if keyboard_check(vk_space) && !(global.control){
-
-	room_goto_next();
-
+	show_debug_message("Unlocked!");
 }

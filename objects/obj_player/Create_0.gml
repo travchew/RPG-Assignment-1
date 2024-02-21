@@ -29,7 +29,7 @@ function face() {
 }
 
 function switch_player() {
-	if keyboard_check_pressed(ord("Z")) {
+	if keyboard_check_pressed(ord("Z")) && ((distance_to_object(obj_mirror) < 20)){
 		show_debug_message("player Switched");
 		if (global.control) {
 			global.control = false;

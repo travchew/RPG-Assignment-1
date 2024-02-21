@@ -10,3 +10,7 @@ function textbox(_text) {
 	}
 }
 
+function textbox_exists() {
+	if instance_exists(my_text) text_exists = true;
+	else text_exists = false;
+}
